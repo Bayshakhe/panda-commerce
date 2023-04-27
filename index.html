@@ -55,7 +55,7 @@
                                     <p>This is the best headphone in the world for people who just want to waste time in
                                         front of funky world.</p>
                                     <h1>$420</h1>
-                                    <div class="btn panda-btn-buy-now">Buy Now</div>
+                                    <div id="slider-btn" class="btn panda-btn-buy-now">Buy Now</div>
                                 </div>
                             </div>
                             <div class="col-lg-5">
@@ -245,13 +245,17 @@
         <!-- Subscribe start -->
         <section style="height: 300px;" class="container rounded-3 d-flex justify-content-center align-items-center panda-bg-info" id="subscribe">
             <div>
+                <div>
+                    <img id="img1" onmouseover="newImg(this)" onmouseout="oldImg(this)" src="./images/logo.png" alt="">
+                </div>
+
                 <h2>LET'S STAY IN TOUCH</h2>
                 <p>Get updates on sales, specials and more</p>
                 <form>
                     <div class="mb-1">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="input-field" aria-describedby="emailHelp">
                     </div>
-                    <button type="submit" class="btn panda-btn-buy-now">Submit</button>
+                    <button type="submit" id="submit-btn" class="btn panda-btn-buy-now" disabled>Submit</button>
                 </form>
             </div>
         </section>
@@ -259,6 +263,8 @@
     <footer class="mt-5 text-center">
         <p><small>©2023. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
     </footer>
+
+    <script src="./basic.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
